@@ -1,0 +1,132 @@
+#page-wrap{
+  width: 900px; 
+  margin: 0 auto;
+}
+
+p, h1, h3 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+p{
+  line-height: 1.5;
+  font-size: 16px;
+  width: 100%;
+}
+
+h3 {
+    page-break-before: always;
+}
+#footnote{
+  font-size: 75%;
+  text-align: center;
+}
+
+.space{margin-top: 2em; }
+
+.choice{
+  font-size: 90%;
+  font-style: oblique;
+  margin-top: 2em;
+}
+
+
+#city_pop {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+#city_pop td, #city_pop th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+#city_pop tr:nth-child(even){background-color: #f2f2f2;}
+
+#city_pop tr:hover {background-color: #ddd;}
+
+#city_pop th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #F28401;
+    color: white;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.x path {
+  display: none;
+}
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 15px;
+  height: auto;
+  background: none repeat scroll 0 0 snow;
+  border: 0 none;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: -3px 3px 15px #888888;
+  color: black;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid ;
+  padding: 5px;
+  text-align: center;
+}
+
+.bar {
+  fill: darkorange;
+}
+
+.bar:hover {
+  fill: red;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--root {
+  stroke: #777;
+  stroke-width: 2px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+form{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+/*  text-align: center;
+*/  width: 87%
+}
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+
+

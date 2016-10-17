@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="dreams.css">
+	<title>Запросы о снах</title>
+</head>
+<body>
+<div id="page-wrap">
+  <h1>Запросы о снах</h1>
+    <p>За июль 2016 года поисковиком Яндекс было обработано около полутора миллионов запросов со словами «к чему снится». Пользователи искали, например, "к чему снится собирать чемоданы", "реквизит к чему снится" и "снится собака к чему". В исследовании были рассмотрены запросы жителей десяти крупнейших городов России:</p>
+    <div>
+      <table id="city_pop">
+        <tr>
+          <th>№</th>
+          <th>Город</th>
+          <th>Население</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Москва</td>
+          <td>12 330 126</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Санкт-Петербург</td>
+          <td>5 225 690</td>
+       </tr>
+       <tr>
+          <td>3</td>	
+          <td>Новосибирск</td>
+          <td>1 584 138</td>
+        </tr>
+        <tr>
+          <td>4</td>	
+          <td>Екатеринбург</td>
+          <td>1 444 439</td>
+       </tr>
+       <tr>
+          <td>5</td> 	
+          <td>Нижний Новгород</td>
+          <td>1 266 871</td>
+        </tr>
+        <tr>
+          <td>6</td>	
+          <td>Казань</td>
+          <td>1 216 965</td>
+       </tr>
+       <tr>
+          <td>7</td>	
+          <td>Челябинск</td>
+          <td>1 191 994</td>
+        </tr>
+        <tr>
+          <td>8</td>	
+          <td>Омск</td>
+          <td>1 178 079</td>
+       </tr>
+       <tr>
+          <td>9</td>	
+          <td>Самара</td>
+          <td>1 170 910</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Ростов-на-Дону</td>
+          <td>1 119 875</td>
+       </tr>
+       </table>
+       <p id='footnote'>*10 крупнейших городов России по населению на 1 января 2016 года</p>
+      </div>
+    <p class='space'>Распределение количества запросов по городам можно увидеть ниже (в тыс.):</p>
+  <div id = bar_cities>
+  <svg width="600" height="430"></svg>
+   <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="bars_c.js"></script>
+  </div>
+
+   <!-- THERE GOES BAR-CITIES-->
+  <h3>Содержание снов</h3>
+    <p>Несмотря на разнообразие тем запросов о снах, самые популярные из них остаются довольно постоянным среди различных городов. Наиболее часто интересуются интерпретацией снов о том, что важно в жизни людей — беременность, свадьба, семья и дети, личные отношения, работа и путешествия. В топ также вошли сны о пугающих событиях — о контактах с умершими  людьми, похоронах, убийствах, пожарах и потопах. Чуть менее популярными оказались сны о различных символах, предметах и животных — от зеркал до рыб, собак и змей. </p>
+    <p>Иногда пользователи хотят найти сонники: "к чему снится ребёнок толкование на mooooon", "к чему снится зеркало мыть сонник-толкование". Часто уточняют пол того, кому приснился сон: “...огонь во сне женщине”, “...полет во сне мужчине”, “...русалка девушке”, “...семья медведей парню”.</p>
+
+    <p class='choice'>Кликните на город, чтобы увидеть, какие слова встречаются в запросах его жителей чаще всего: </p>
+  
+  <script src="http://d3js.org/d3.v3.min.js"></script> 
+  <div id = "area2">
+   <script type="text/javascript" src="word_bubble.js"></script>
+     <!-- // <script type="text/javascript" src="wb2.js"></script> -->
+
+  </div>
+  <h3 class = 'space'>День недели и время</h3>
+    <p>По данным за июль, во всех рассмотренных городах наибольшая часть запросов приходилась на конец недели: пятницу и выходные.</p>
+    <p class='choice'>Выберите город:</p>
+  <div id = "area1"> 
+    <form>
+      <label><input type="radio" name="dataset" id="dataset" value="Всего" checked> Всего</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Москва"> Москва</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Санкт-Петербург"> Санкт-Петербург</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Новосибирск" >Новосибирск</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Екатеринбург">Екатеринбург</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Нижний Новгород">Нижний Новгород</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Казань">Казань</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Челябинск">Челябинск</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Омск">Омск</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Самара">Самара</label>
+      <label><input type="radio" name="dataset" id="dataset" value="Ростов-на-Дону">Ростов-на-Дону</label>
+    
+    </form>
+   <script type="text/javascript" src="weekday.js"></script> 
+
+  </div>
+    <p>Чаще всего о снах спрашивают в утренние часы:</p>
+
+  <svg class="chart"></svg>
+  <script type="text/javascript" src="hour_hist.js"></script> 
+</div>
+</body>
+</html>
