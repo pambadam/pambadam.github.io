@@ -38,6 +38,11 @@ h3 {
     margin-left:auto; 
     margin-right:auto;
 }
+svg{
+    display: block;
+    margin: auto;
+}
+
 
 #city_pop td, #city_pop th {
     border: 1px solid #ddd;
